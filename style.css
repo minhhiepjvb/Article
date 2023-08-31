@@ -239,7 +239,18 @@ figcaption {
     margin-right: 20px;
 }
 
-/* Gallaries */
+/* Line bottom */
+.line-bottom {
+    position: relative;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.line-bottom img {
+    position: absolute;
+    top: -30px;
+}
+
 #bottom-hr {
     margin: 30px auto;
     height: 2px;
@@ -247,6 +258,7 @@ figcaption {
     background-color: #000000;
 }
 
+/* Gallaries */
 .gallaries {
     width: 70%;
     margin: 0 auto;
@@ -282,7 +294,7 @@ figcaption {
 /* Sign up form */
 .signup-form {
     width: 40%;
-    margin: 50px auto;
+    margin: 100px auto;
     text-align: center;
     border: #000000 solid 2px;
     border-top: #000000 solid 10px;
