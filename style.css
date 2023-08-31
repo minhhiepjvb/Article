@@ -90,7 +90,7 @@ html {
 
 .about-text p {
     font-size: 2rem;
-    width: 592px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -154,6 +154,10 @@ html {
 .tw {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.phone {
+    display: none;
 }
 
 .btn img {
@@ -352,7 +356,8 @@ figcaption {
     font-weight: 400;
 
     white-space: nowrap;
-
+    overflow: hidden;
+    text-overflow: ellipsis;
     width: 100%;
 }
 
@@ -391,7 +396,6 @@ figcaption {
 .footer-animated-text {
     display: inline-block;
     animation: slide 20s linear infinite;
-    animation-delay: 0s;
 }
 
 .footer a:hover {
@@ -412,6 +416,8 @@ figcaption {
 
 /* Responsive Mobile */
 @media screen and (max-width:992px) {
+
+    /* Navbar */
     #navbar-mobile {
         display: block;
     }
@@ -420,17 +426,51 @@ figcaption {
         display: none;
     }
 
+    /* Articles */
+    .articles {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .articles-user {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-left {
+        margin-bottom: 30px;
+    }
+
+    .btn-link {
+        width: 100%;
+    }
+
+    .phone {
+        display: block;
+    }
+
+
+
+    /* Gallary */
     .gallaries {
         width: 100%;
 
     }
 
     .gallaries-image {
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
     }
 
     .gallaries-item {
         width: 100%;
+    }
+
+    /* Sign up form */
+    .signup-form {
+        width: 100%;
+
     }
 }
