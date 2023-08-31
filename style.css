@@ -31,7 +31,6 @@ html {
     margin-bottom: 30px;
 }
 
-.logo {}
 
 .navbar-links {
     list-style: none;
@@ -73,14 +72,14 @@ html {
 
 .about img {
     display: block;
-
     margin: 60px auto;
-    width: min(854px, 100%);
+    width: 100%;
+    height: auto;
 }
 
 .about-text {
     text-align: center;
-    width: 854px;
+    width: min(854px, 100%);
     margin: 0 auto;
 }
 
@@ -147,8 +146,6 @@ html {
 
 }
 
-
-
 .fb {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -168,6 +165,165 @@ html {
 
 .btn:hover {
     background-color: #EAEAEA;
+}
+
+.articles-content>p {
+    font-size: 2rem;
+    margin: 30px 0;
+}
+
+.articles-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.articles-content>img {
+    display: block;
+    margin: 0px auto;
+    width: min(854px, 100%);
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.articles-content-list {
+    font-size: 2rem;
+
+}
+
+.articles-content-list li {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+#articles-btn {
+    width: 100%;
+}
+
+#articles-btn li {
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+#articles-tag {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#articles-tag span {
+    text-decoration: underline;
+}
+
+#articles-line {
+    border-top: 2px dotted;
+
+}
+
+.articles-author {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.articles-author img {
+    margin-right: 20px;
+}
+
+/* Gallaries */
+#bottom-hr {
+    margin: 30px auto;
+    height: 2px;
+    color: #000000;
+    background-color: #000000;
+}
+
+.gallaries {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallaries>h1 {
+    font-size: 4.4rem;
+}
+
+.gallaries p {
+    max-width: 304px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+.gallaries-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.gallaries-item img {
+    transition: 0.5s;
+}
+
+.gallaries-item img:hover {
+    transform: scale(1.2);
+}
+
+/* Sign up form */
+.signup-form {
+    width: 40%;
+    margin: 50px auto;
+    text-align: center;
+    border: #000000 solid 2px;
+    border-top: #000000 solid 10px;
+}
+
+.signup-form form {}
+
+.signup-form h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.signup-form p {
+    font-size: 1.6rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin: 30px 0;
+    font-size: 1.6rem;
+}
+
+.form-input input[type="text"] {
+    width: 50%;
+    border: #000000 solid 1px;
+}
+
+.form-input input[type="submit"] {
+    width: 20%;
+    background-color: #000000;
+    color: #fff;
+
+}
+
+.form-input input[type="submit"]:hover {
+    background-color: #636060;
+    cursor: pointer;
 }
 
 /* footer */
@@ -242,7 +398,6 @@ html {
 }
 
 
-
 /* Responsive Mobile */
 @media screen and (max-width:992px) {
     #navbar-mobile {
@@ -253,5 +408,17 @@ html {
         display: none;
     }
 
+    .gallaries {
+        width: 100%;
 
+    }
+
+    .gallaries-image {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .gallaries-item {
+        width: 100%;
+    }
 }
