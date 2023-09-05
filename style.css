@@ -202,9 +202,12 @@ h1 {
     margin: 0 auto;
 }
 
+#articles-content-image {
+    text-align: center;
+}
 
 #articles-content-image img {
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
 }
 
@@ -528,6 +531,10 @@ figcaption {
         display: block;
     }
 
+    #articles-content-image img {
+        width: 100%;
+        margin: 0 auto;
+    }
 
     /* Gallary */
     .gallaries {
