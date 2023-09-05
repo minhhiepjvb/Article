@@ -1,3 +1,8 @@
+@import url('https://fonts.cdnfonts.com/css/new-york-extra-large');
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url(https://db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text+Regular);
+
 :root {}
 
 * {
@@ -9,7 +14,6 @@
 html {
     color: #333;
     font-size: 62.5%;
-    font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
 
 }
@@ -20,8 +24,14 @@ html {
     margin: 0 auto;
 }
 
+h1 {
+
+    font-family: "New York Extra Large", sans-serif;
+}
+
 /* Navbar */
 .navbar {
+    font-family: "New York Small", sans-serif;
     width: 1440px;
     max-width: 100%;
     padding: 30px 30px;
@@ -89,6 +99,8 @@ html {
 }
 
 .about-text p {
+    font-family: "SF Mono";
+
     font-size: 2rem;
     width: 80%;
     margin: 0 auto;
@@ -105,13 +117,15 @@ html {
 /* articles */
 
 .articles {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .articles-user {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .user-left {
@@ -120,6 +134,7 @@ html {
 }
 
 .user-name {
+    font-family: "SF Pro Text Regular", sans-serif;
     margin: 0 10px;
     font-size: 1.6rem;
 }
@@ -172,31 +187,42 @@ html {
 }
 
 .articles-content>p {
+    font-family: "New York Medium", sans-serif;
+    width: 50%;
+    margin: 30px auto;
     font-size: 2rem;
-    margin: 30px 0;
+
 }
 
 .articles-content h2 {
+    font-family: 'SF Pro Display', sans-serif;
     font-size: 32px;
     font-weight: 700;
-}
-
-.articles-content>img {
-    display: block;
-    margin: 0px auto;
-    width: min(854px, 100%);
-}
-
-figcaption {
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 500;
     width: 50%;
     margin: 0 auto;
 }
 
+
+#articles-content-image img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-family: "SF Pro Text Regular", sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 30%;
+    margin: 0 auto;
+}
+
+
 .articles-content-list {
+    font-family: "New York Medium", sans-serif;
     font-size: 2rem;
+    width: 50%;
+    margin: 0 auto;
 
 }
 
@@ -206,7 +232,8 @@ figcaption {
 }
 
 #articles-btn {
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
 }
 
 #articles-btn li {
@@ -226,17 +253,22 @@ figcaption {
 
 #articles-line {
     border-top: 2px dotted;
+    width: 50%;
+    margin: 0 auto;
 
 }
 
 .articles-author {
-    width: 100%;
+    font-family: "New York Small", sans-serif;
+    width: 50%;
+    margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.6rem;
+
 }
 
 .articles-author img {
@@ -262,6 +294,10 @@ figcaption {
     background-color: #000000;
 }
 
+#sharetext {
+    display: none;
+}
+
 /* Gallaries */
 .gallaries {
     width: 70%;
@@ -274,6 +310,7 @@ figcaption {
 }
 
 .gallaries p {
+    font-family: 'SF Pro Display', sans-serif;
     max-width: 304px;
     font-size: 2.2rem;
     font-weight: 500;
@@ -297,14 +334,13 @@ figcaption {
 
 /* Sign up form */
 .signup-form {
-    width: 40%;
+    width: 50%;
     margin: 100px auto;
+    padding: 0 30px;
     text-align: center;
     border: #000000 solid 2px;
     border-top: #000000 solid 10px;
 }
-
-.signup-form form {}
 
 .signup-form h1 {
     font-size: 3.6rem;
@@ -312,12 +348,14 @@ figcaption {
 }
 
 .signup-form p {
+    font-family: 'SF Pro Display', sans-serif;
     font-size: 1.6rem;
     width: 90%;
     margin: 0 auto;
 }
 
 .form-input {
+    font-family: 'SF Pro Display', sans-serif;
     display: flex;
     justify-content: center;
     height: 40px;
@@ -344,6 +382,7 @@ figcaption {
 
 /* footer */
 .footer {
+    font-family: "SF Pro Text Regular", sans-serif;
     background-color: #000000;
     color: white;
     text-align: center;
@@ -366,6 +405,7 @@ figcaption {
 }
 
 .footer p {
+    font-family: "New York Small", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
     width: 488px;
@@ -426,6 +466,12 @@ figcaption {
         display: none;
     }
 
+    /* About */
+    .about hr {
+        width: 90%;
+
+    }
+
     /* Articles */
     .articles {
         width: 80%;
@@ -435,22 +481,52 @@ figcaption {
     .articles-user {
         width: 100%;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+    }
+
+    #articles-btn-top {
+        width: 100%;
+    }
+
+    #articles-btn-top li {
+        width: 100%;
     }
 
     .user-left {
         margin-bottom: 30px;
     }
 
-    .btn-link {
-        width: 100%;
-    }
-
     .phone {
         display: block;
     }
 
+    .articles-content>p {
+        width: 100%;
+    }
+
+    .articles-content h2 {
+        width: 100%;
+    }
+
+    figcaption {
+        width: 100%;
+    }
+
+    #articles-btn {
+        width: 100%;
+    }
+
+    #articles-line {
+        width: 100%;
+    }
+
+    .articles-author {
+        width: 100%;
+    }
+
+    #sharetext {
+        display: block;
+    }
 
 
     /* Gallary */
@@ -468,9 +544,16 @@ figcaption {
         width: 100%;
     }
 
+
+
     /* Sign up form */
     .signup-form {
         width: 100%;
+        padding: 50px 50px;
 
+    }
+
+    .hideobject {
+        display: none;
     }
 }
